@@ -5,10 +5,10 @@ from pathlib import Path
 from pkg_resources import VersionConflict, require
 from setuptools import find_packages, setup
 
-with open("README.md") as f:
+with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
-with open("requirements.txt") as f:
+with open("requirements.txt", encoding="utf-8") as f:
     requirements = f.read().splitlines()
 
 try:
